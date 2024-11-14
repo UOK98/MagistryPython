@@ -3,19 +3,15 @@ import random
 boys = ['Peter', 'Alex', 'John', 'Arthur', 'Richard']
 girls = ['Kate', 'Liza', 'Kira', 'Emma', 'Trisha']
 
-boys_count = len(boys)
-girls_count = len(girls)
+boys =  sorted(boys)
+girls = sorted(girls)
 
-if girls_count != boys_count:
+if len(boys) != len(girls):
     print("Внимание, кто-то может остаться без пары!")
     exit()
    
 print("Идеальные пары:")
 n = 0
-while n < girls_count: 
+while n < len(boys): 
+    print(girls[n], "и", boys[n])
     n = n + 1
-    one_girl = random.choice(girls)
-    one_boy = random.choice(boys)
-    print(one_girl, "и", one_boy)
-    boys.remove(one_boy)
-    girls.remove(one_girl)
