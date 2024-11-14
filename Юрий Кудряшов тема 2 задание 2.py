@@ -7,10 +7,10 @@ boys_count = len(boys)
 girls_count = len(girls)
 
 if girls_count != boys_count:
-    print("Someone can stay alone!")
+    print("Внимание, кто-то может остаться без пары!")
     exit()
    
-
+print("Идеальные пары:")
 n = 0
 while n < girls_count: 
     n = n + 1
